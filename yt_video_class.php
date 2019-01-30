@@ -148,8 +148,4 @@ class youtube_video{
 
 }
 
-$yt = new youtube_video('https://www.youtube.com/watch?v=FTQbiNvZqaY');
-
-echo $yt->get_nameChannel();
-
 ?>
