@@ -1,7 +1,6 @@
 # youtube_video_class
 
 I coded this class for manage youtube videos easiest on our website.
-
 If you have a question or just want talk with me, you can come on [my Twitter](https://twitter.com/DevIl00110000).
 
 ## How to use ?
@@ -13,9 +12,7 @@ $yt = new youtube_video('https://www.youtube.com/watch?v=FTQbiNvZqaY');
 
 ### Is_vYT()
 It's the only static function.
-
 This function return true if the url is a youtube url. 
-
 Return **true**
 ``` php
 if (youtube_video::Is_vYT('https://www.youtube.com/watch?v=FTQbiNvZqaY')) {
@@ -53,14 +50,14 @@ Return **Toto - Africa (Official Music Video)**
 ### get_urlChannel()
 Return the channel url.
 ``` php
-$yt->get_urlChanel();
+$yt->get_urlChannel();
 ```
 Return **https://www.youtube.com/user/TotoVEVO**
 
 ### get_nameChannel()
 Return the channel name.
 ``` php
-$yt->get_nameChanel();
+$yt->get_nameChannel();
 ```
 Return **TotoVEVO**
 
@@ -86,15 +83,14 @@ Return **an iframe of the video**
 ## Iframe setting
 
 In this class, there is a public variable named **$iframe_param**.
-
 You need to use it for set the iframe.
-
 For example, if you need to change the iframe width, you can do like that :
 ``` php
 $yt->iframe_param["width"] = '160px';
 ```
 
-There are 12 parameters that you can set and all are commented with their default value.
+There are 12 parameters that you can set and all are commented
+with their default value.
 ``` php
 public $iframe_param = [
 		'width'          => '560px', // width (or indicator css like "%")
